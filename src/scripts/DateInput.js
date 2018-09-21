@@ -84,7 +84,9 @@ export default class DateInput extends Component {
     this.onDatepickerSelect = this.onDatepickerSelect.bind(this);
     this.onDatepickerBlur = this.onDatepickerBlur.bind(this);
     this.onDatepickerClose = this.onDatepickerClose.bind(this);
+  }
 
+  componentDidMount() {
     registerStyle('dateinput', [
       [
         '.slds-has-error .slds-datepicker .slds-select',

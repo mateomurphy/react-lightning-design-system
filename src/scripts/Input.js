@@ -13,6 +13,9 @@ export default class Input extends Component {
     super();
     this.onChange = this.onChange.bind(this);
     this.onKeyDown = this.onKeyDown.bind(this);
+  }
+
+  componentDidMount() {
     this.registerIconStyle();
   }
 

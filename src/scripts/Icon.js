@@ -87,15 +87,16 @@ export default class Icon extends Component {
   constructor(props) {
     super(props);
     this.state = {};
+  }
+
+  componentDidMount() {
     registerStyle('icon', [
       [
         '.slds-icon use',
         '{ pointer-events: none; }',
       ],
     ]);
-  }
 
-  componentDidMount() {
     this.checkIconColor();
     const svgEl = this.svgIcon;
     if (svgEl) {

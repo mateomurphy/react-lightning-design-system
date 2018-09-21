@@ -9,6 +9,9 @@ export default class DropdownButton extends Component {
   constructor() {
     super();
     this.state = { opened: false };
+  }
+
+  componentDidMount() {
     registerStyle('no-hover-popup', [
       [
         '.slds-dropdown-trigger:hover .slds-dropdown--menu.react-slds-no-hover-popup',

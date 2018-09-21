@@ -120,8 +120,7 @@ export class LookupSearch extends Component {
     lookupSearchRef: PropTypes.func,
   }
 
-  constructor(props) {
-    super(props);
+  componentDidMount() {
     /* eslint-disable max-len */
     registerStyle('lookupSearch', [
       [

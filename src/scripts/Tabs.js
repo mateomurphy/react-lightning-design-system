@@ -202,9 +202,12 @@ Tab.propTypes = {
  */
 export default class Tabs extends Component {
 
-  constructor() {
-    super();
+  constructor(props) {
+    super(props);
     this.state = {};
+  }
+
+  componentDidMount() {
     registerStyle('tab-menu', [
       [
         '.slds-tabs__item.react-slds-tab-with-menu',

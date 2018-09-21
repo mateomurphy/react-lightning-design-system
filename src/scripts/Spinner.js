@@ -5,8 +5,7 @@ import { registerStyle } from './util';
 
 export default class Spinner extends React.Component {
 
-  constructor() {
-    super();
+  componentDidMount() {
     registerStyle('spinner-overlay', [
       [
         'body .slds .slds-spinner_container',
